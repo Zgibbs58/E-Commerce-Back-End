@@ -113,7 +113,8 @@ router.delete("/:id", async (req, res) => {
         id: req.params.id,
       },
     });
-
+    // !productData checks to see if a product was deleted
+    // the method returns the number of rows affected and if that is 0 it's falsy
     if (!productData) {
       res.status(404).json({ message: "No product found with that id!" });
       return;
