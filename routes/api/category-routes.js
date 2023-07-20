@@ -57,7 +57,7 @@ router.put("/:id", async (req, res) => {
         id: req.params.id,
       },
     });
-    if (!categoryData[0]) {
+    if (!categoryData) {
       res.status(404).json({ message: "No user with this id!" });
       return;
     }
