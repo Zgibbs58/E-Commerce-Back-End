@@ -15,6 +15,7 @@ Category.hasMany(Product, {
   onDelete: "CASCADE",
 });
 
+// These two create ProductTag object with productId and tagId from the id fields of these two models
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, { through: ProductTag });
 
