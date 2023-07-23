@@ -55,17 +55,17 @@ PUT /api/tags/:id: Update a tag by its ID.
 DELETE /api/tags/:id: Delete a tag by its ID.
 
 ## Walkthrough Video
-Link to the walkthrough video
+[Link to the walkthrough video](https://drive.google.com/file/d/1-7u2BztdF8_n429MhiWRtn0jTaXLSn9S/view)
+
 
 In the video, you will see how to set up the application, create and seed the database, and test the API routes using Insomnia Core.
 
+![Walkthrough GIF](assets/walkthrough.gif)
 ## Technologies Used
-Express.js
-MySQL
-Sequelize
-dotenv
-License
-This project is licensed under the MIT license. See the LICENSE file for more details.
+- Express.js
+- MySQL
+- Sequelize
+- dotenv
 
 ## License
 
