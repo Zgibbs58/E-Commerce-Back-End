@@ -58,6 +58,8 @@ router.put("/:id", async (req, res) => {
         id: req.params.id,
       },
     });
+    // tagData needs [0] because it returns an array [0, "tagData"]
+    // the first number is how many items were deleted
     if (!tagData[0]) {
       res.status(404).json({ message: "No user with this id!" });
       return;
